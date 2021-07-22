@@ -1,0 +1,62 @@
+Git Setup and Cheat sheet
+
+What is Git: A source version control system
+Why we need it: Code related training resources are hosted in GitHub and we need Git installed to clone the repository locally.
+Official resources: https://git-scm.com/
+
+-------------------------------
+
+Setup - install Git
+
+git --version - check if Git is installed and the version
+
+OR if not installed
+
+Download and install it from https://git-scm.com/
+
+At this stage you should be ready for the course prerequisites. 
+
+-------------------------------
+
+Below are a few extra commands as a cheat sheet to have at hand for your future needs.
+
+
+git clone - download a repository and full history
+
+git config credential.username <your GitHub username> - configure the GitHub username for Git
+
+git config --global user.name <"your GitHub username"> - configure Git username
+
+git config --global user.email <"your GitHub email"> - configure Git email
+
+git config --list - check Git configuration
+
+git status - display all or new files to be committed
+
+git log - display the version history of the current branch
+
+git add - add the changes of the local repository to the Staging area
+
+git reset - remove the changes from Staging area
+
+git commit - progress changes in Staging area to a Snapshot (ready to be pushed)
+
+git reset HEAD^ - drop the changes Snapshot
+
+git push - push locally committed changes to the remote repository (in GitHub)
+
+git checkout - checkout a branch
+
+git pull - bring and incorporate changes locally from the repository in GitHub
+
+git fetch - update locally full history (including branches) structure from GitHub
+
+Open "Pull Request" & perform "Merge" in GitHub to merge changes from one branch into other branch
+
+More reading:
+
+Docs: https://git-scm.com/docs
+
+A nice Cheat sheet created by GitHub: https://training.github.com/downloads/github-git-cheat-sheet.pdf
+
+GitHub guides: https://guides.github.com/

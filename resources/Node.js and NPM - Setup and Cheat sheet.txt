@@ -1,0 +1,63 @@
+Node.js and NPM Cheat sheet and Setup
+
+What is Node.js: Node.js is a JavaScript runtime 
+Why we need it: WebdriverIO uses Node.js
+Official resources: https://nodejs.org/en/
+
+What is NPM: Node Package Manager
+Why we need it: To install various node packages including the ones used by Webdriver.io
+Official resources: https://www.npmjs.com/
+
+-------------------------------
+
+Setup - install Node.js and NPM
+
+Depending on the WebdriverIO version a specific version of Node.js is needed. Node.js installation will include NPM as well.
+I recommend installing the current LTS version found at: https://nodejs.org/en/. Follow the instructions on website.
+
+Check Node.js version and that it was installed correctly
+node --version
+
+Check NPM version and that it was installed correctly
+npm --version
+
+At this stage you should be ready for the course prerequisites. 
+
+-------------------------------
+
+Below are a few extra commands as a cheat sheet to have at hand for your future needs.
+
+Create new package.json file utility
+npm init
+
+If you want all questions answered automatically with yes
+npm init -y
+
+Install package in devDependencies
+npm install --save-dev <package name>
+
+Install package in dependencies
+npm install --save-prod <package name>
+
+Install modules listed in package.json dependencies but not in devDependencies
+npm install --production
+
+Install modules listed in package.json
+npm install
+
+List installed packages
+npm ls
+
+Uninstall package in devDependencies
+npm uninstall <package name> --save-dev
+
+Uninstall package in dependencies
+npm uninstall <package name> --save
+
+Uninstall package in both devDependencies and dependencies
+npm uninstall <package name>
+
+Run a script from the package.json 
+npm run <command>
+
+-------------------------------

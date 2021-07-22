@@ -1,0 +1,18 @@
+VSCode and Prettier Cheat sheet
+
+In VSCode, from View > Command Palette, select: Shell Command: Install 'code' command in Path. This will allow you to open VSCode from terminal with 'code .'
+
+In VSCode, from Code > Preferences > Settings > Text Editor > Formatting > check Format on Save
+
+In VSCode, Extensions > install Prettier
+
+npm install prettier --save-dev (if you don't have it already added to package.json)
+
+create .prettierrc file in the project root
+
+edit .prettierrc file and add (your preferences) i.e.:
+{
+    "singleQuote": true
+}
+
+If you have Prettier already added to package.json just perform 'npm install'

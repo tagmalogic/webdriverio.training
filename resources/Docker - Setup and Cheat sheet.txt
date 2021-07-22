@@ -1,0 +1,57 @@
+Docker Desktop Setup and Cheat sheet
+
+What is Docker: Docker is a platform/tool for running containerised applications and beyond
+Why we need it: We need Docker to orchestrate the start of our web application under test that is a fully functional WordPress local site.
+Official resources: https://www.docker.com/
+Learning resources: https://www.docker.com/101-tutorial
+Docker Desktop and Compose - getting started & install: https://www.docker.com/products/docker-desktop
+Docker Desktop - guide: https://docs.docker.com/get-started/
+Docker Compose - guide: https://docs.docker.com/compose/gettingstarted/
+-------------------------------
+
+Setup - Docker Desktop
+
+Download and install it from https://www.docker.com/products/docker-desktop
+
+At this stage you should be ready for the course prerequisites. 
+
+-------------------------------
+
+Below are a few extra commands as a cheat sheet to have at hand for your future needs.
+
+It is not intended to be a comprehensive list of commands of Docker Desktop and Docker Compose.
+
+Check the installed Docker version
+docker --version
+
+Check the Docker Compose version
+docker-compose --version
+
+Start the containers defined in docker-compose.yml file. It should be in the same folder
+docker-compose up -d
+
+Stop containers started earlier without losing any data
+docker-compose stop
+
+Start the earlier stopped containers
+docker-compose start
+
+Dispose the containers but keep the volumes (so you don't need to set up WordPress again when you bring them up)
+docker-compose down
+
+Dispose the containers and volumes (you will need to reconfigure WordPress when  bring them up again)
+docker-compose down --volumes
+
+See docker images present on your system
+docker images
+
+Remove image that is not used by any containers
+docker rmi <image id>
+
+ATTENTION:
+Be extremely careful with Docker containers and Docker images that you have on your system and don't want to lose.
+If you are not sure about one command better read more about it or avoid executing it.
+
+Read more about Docker and Docker Compose at:
+https://docs.docker.com/get-started/
+https://docs.docker.com/compose/gettingstarted/

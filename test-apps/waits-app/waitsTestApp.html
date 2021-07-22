@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Wait test app</title>
+</head>
+
+<body>
+    <div id="text1">Page loading...</div>
+    <div id="text2" style="visibility: hidden"></div>
+    <form id="fullForm" style="visibility: hidden">
+        <p>First name:</p>
+        <input type="text" name="firstname" id="firstName"> <br>
+        <p>Last name:</p>
+        <input disabled type="text" name="lastname" id="lastName"> <br>
+    </form>
+    <script>
+        function toggleTopMessage(callback) {
+            setTimeout(() => {
+                document.getElementById('text1').style.visibility = "hidden";
+                document.getElementById('text2').style.visibility = "visible";
+                document.getElementById('text2').innerHTML = "Please fill in the details in the form below";
+                callback(enableLastName);
+            }, 5000);
+        }
+
+        function showForm(callback) {
+            setTimeout(() => {
+                document.getElementById("fullForm").style.visibility = "visible";
+                callback(addNewInput);
+            }, 5000);
+        }
+
+        function enableLastName(callback) {
+            setTimeout(() => {
+                document.getElementById("lastName").removeAttribute("disabled");
+                callback(addNewInput);
+            }, 5000);
+        }
+
+        function addNewInput() {
+            setTimeout(() => {
+                var newP = document.createElement("p");
+                var newPText = document.createTextNode("Dog's name");
+                newP.appendChild(newPText);
+
+                var newInput = document.createElement("input");
+                var newAttribute = document.createAttribute("id");
+                newAttribute.value = "dogsName";
+                newInput.setAttributeNode(newAttribute);
+
+
+                var element = document.getElementById("fullForm");
+                element.appendChild(newP);
+                element.appendChild(newInput);
+            }, 5000)
+        }
+
+        toggleTopMessage(showForm)
+    </script>
+</body>
+
+</html>

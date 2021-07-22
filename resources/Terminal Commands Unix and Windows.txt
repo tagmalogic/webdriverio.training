@@ -1,0 +1,25 @@
+Cheat sheet command line
+
+Short list of command line / terminal commands for Unix/Mac and their relative equivalents for Windows.
+
+Where exact equivalent is not possible, an approximate replacement is suggested.
+
+
+	Unix/Mac			|	Windows			  
+------------------------------------------------------------------
+ls					|	dir
+cd					|	cd
+cd ..					|	cd ..
+touch <filename>			|	fsutil file createnew <filename> 0
+less					|	type
+pwd					|	cd
+cp					|	copy
+rm					|	del
+mv					|	move
+ps					|	tasklist
+mkdir					|	mkdir
+rm -rf <folder name>			|	rmdir /s <folder name>
+open -a TextEdit <filename>		|	edit <filename>
+vi <filename> OR nano <filename>	|	notepad <filename>
+
+
