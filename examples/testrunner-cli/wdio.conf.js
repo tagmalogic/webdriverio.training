@@ -24,10 +24,6 @@ exports.config = {
   // will be called from there.
   //
   specs: ["./test/specs/**/*.js"],
-  suites: {
-    one: ["./test/specs/example.e2e-one.js"],
-    two: ["./test/specs/example.e2e-two.js"],
-  },
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -138,7 +134,7 @@ exports.config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ['spec','dot'],
+  reporters: ["spec"],
 
   //
   // Options to be passed to Mocha.
