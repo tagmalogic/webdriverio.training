@@ -17,7 +17,7 @@ When(/^I login with (\w+) and (\w+)$/, async (username, password) => {
 
 Then(/^I should see (\w+) page with ([^]*)?$/, async (page, title) => {
   await AdminDashboardPage.labelWelcomePanelTitle_waitForDisplayed();
-  
+
   await expect(await pages[page].getPageTitle()).toBe(title, {
     message: "Page title not as expected",
   });
