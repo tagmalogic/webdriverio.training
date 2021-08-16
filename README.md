@@ -1,1 +1,1 @@
-# webdriverio.training
+Resources for learning WebdriverIO
