@@ -10,13 +10,13 @@ describe("Login to wordpress", () => {
     const lblUserName = await browser.$("//label[@for='user_login']");
     await lblUserName.waitForDisplayed();
     await expect(lblUserName).toHaveText("Username or Email Address");
-    await expect(lblUserName).toHaveTextContaining("Username or Email", {
+    await expect(lblUserName).toHaveText("Username or Email", {
       containing: true,
     });
     await expect(lblUserName).toHaveTextContaining("Username or Email");
 
     const userName = await browser.$("#user_login");
-    userName.waitForDisplayed();
+    await userName.waitForDisplayed();
     await expect(userName).toBeDisplayed();
     await userName.setValue("wdiotraining");
     await expect(userName).toHaveValue("wdiotraining");
@@ -25,14 +25,13 @@ describe("Login to wordpress", () => {
       message: "The username value is not as expected",
     });
     await expect(userName).toHaveValueContaining("wdio");
-
     const userPass = await browser.$("#user_pass");
-    userPass.waitForDisplayed();
+    await userPass.waitForDisplayed();
     await userPass.setValue("wdiopass");
     await expect(userPass).toHaveValue("wdiopass");
 
     const submitBtn = await browser.$("#wp-submit");
-    submitBtn.waitForDisplayed();
+    await submitBtn.waitForDisplayed();
     await expect(submitBtn).toHaveValue("Log In");
     await submitBtn.click();
 
