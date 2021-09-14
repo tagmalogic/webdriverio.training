@@ -1,0 +1,11 @@
+{
+  "platformName": "Android",
+  "platformVersion": "10.0",
+  "deviceName": "Pixel_XL",
+  "orientation": "PORTRAIT",
+  "automationName": "UiAutomator2",
+  "newCommandTimeout": 240,
+  "app": "/{your path here}/Android-NativeDemoApp-0.4.0.apk",
+  "noReset": true,
+  "appWaitActivity": "*"
+}

@@ -1,0 +1,10 @@
+{
+  "platformName": "iOS",
+  "platformVersion": "14.4",
+  "deviceName": "iPhone 12 Pro Max",
+  "orientation": "PORTRAIT",
+  "automationName": "XCUITest",
+  "newCommandTimeout": 240,
+  "app": "/{your path here}/iOS-Simulator-NativeDemoApp-0.4.0.app.zip",
+  "noReset": true
+}

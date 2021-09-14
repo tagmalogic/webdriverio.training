@@ -1,0 +1,9 @@
+{
+  "platformName": "Android",
+  "browserName": "chrome",
+  "platformVersion": "10.0",
+  "deviceName": "Pixel_XL",
+  "orientation": "PORTRAIT",
+  "automationName": "UiAutomator2",
+  "newCommandTimeout": 240
+}

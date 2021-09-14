@@ -1,0 +1,9 @@
+{
+  "platformName": "iOS",
+  "browserName": "safari",
+  "platformVersion": "14.4",
+  "deviceName": "iPhone 12 Pro Max",
+  "orientation": "PORTRAIT",
+  "automationName": "XCUITest",
+  "newCommandTimeout": 240
+}
